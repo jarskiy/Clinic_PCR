@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="982" Width="1512">
     <Grid>
-        
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFFAFAFA" Width="273" Height="979">
+            <Image Height="173" Source="/Image1.png" Stretch="Fill" Width="182" HorizontalAlignment="Left" Margin="38,640,0,0"/>
+        </Label>
+
+        <Label Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFFAFAFA" Width="1512" Height="83"/>
+        <Label Content="Admin" Background="#FF2183CE" FontWeight="Normal" FontFamily="Segoe UI Semibold" FontSize="20" Foreground="White" Width="151" Height="50" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="61,170,0,0"/>
+
+        <Label HorizontalAlignment="Left" Margin="272,88,0,0" VerticalAlignment="Top" Background="#FFD9D9D9" Width="1240" Height="878">
+
+        </Label>
+        <Label Content="Klinik" HorizontalAlignment="Left" Margin="91,83,0,0" VerticalAlignment="Top" Foreground="#FF2183CE" FontFamily="Segoe UI Semibold" FontSize="32"/>
+        <Label Content="Dashboard" HorizontalAlignment="Left" Margin="82,272,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        <Label Content="Daftar Pasien" HorizontalAlignment="Left" Margin="71,341,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        <Label Content="Rekam Medis" HorizontalAlignment="Left" Margin="70,407,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        <Label Content="Kelola Klinik" HorizontalAlignment="Left" Margin="76,471,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        <Label Content="Diagnosis" HorizontalAlignment="Left" Margin="87,535,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        <Label Content="Logout" HorizontalAlignment="Left" Margin="99,596,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        <Button Content="Info" HorizontalAlignment="Left" Margin="60,836,0,0" VerticalAlignment="Top" Background="#FF2183CE" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="20" Width="151" Height="36" BorderBrush="#FF2183CE"/>
+
+
     </Grid>
 </Window>
