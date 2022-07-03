@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="982" Width="1512">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="909,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="478" FontSize="20" TextChanged="TextBox_TextChanged" Height="47" Background="WhiteSmoke" VerticalContentAlignment="Center"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="909,448,0,0" VerticalAlignment="Top" Width="478" Height="47" Background="WhiteSmoke" FontSize="20" VerticalContentAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Margin="909,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="478" FontSize="20" TextChanged="TextBox_TextChanged" Height="47" Background="WhiteSmoke" VerticalContentAlignment="Center" Name="user"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="909,448,0,0" VerticalAlignment="Top" Width="478" Height="47" Background="WhiteSmoke" FontSize="20" VerticalContentAlignment="Center" Name="pass"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="904,277,0,0" VerticalAlignment="Top" Width="105" Height="37" FontSize="20" Foreground="#FF505050"/>
-        <Button Content="Sign In" HorizontalAlignment="Left" Margin="909,538,0,0" VerticalAlignment="Top" Width="478" Click="Button_Click" Foreground="#FFF9F9F9" BorderBrush="#FF2183CE" Background="#FF2183CE" Height="47" FontSize="20"/>
+        <Button Content="Sign In" HorizontalAlignment="Left" Margin="909,538,0,0" VerticalAlignment="Top" Width="478" Click="SignIn_Click" Foreground="#FFF9F9F9" BorderBrush="#FF2183CE" Background="#FF2183CE" Height="47" FontSize="20"/>
         <Label Content="Forgot Password?" HorizontalAlignment="Left" Margin="1217,406,0,0" VerticalAlignment="Top" Foreground="#FF2183CE" FontSize="20" FontWeight="Normal" FontFamily="Segoe UI Semibold"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="904,406,0,0" VerticalAlignment="Top" Width="105" Height="37" FontSize="20" Foreground="#FF505050"/>
         <Label Content="Belum Mendaftar?" HorizontalAlignment="Left" Margin="976,618,0,0" VerticalAlignment="Top" Width="178" Height="37" FontSize="20" Foreground="#FF505050"/>
