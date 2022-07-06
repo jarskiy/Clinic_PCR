@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectKel3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="982" Width="1512">
+        Title="Klinik PCR" Height="982" Width="1512" WindowState="Maximized">
     <Grid>
         <TextBox HorizontalAlignment="Left" Margin="909,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="478" FontSize="20" TextChanged="TextBox_TextChanged" Height="47" Background="WhiteSmoke" VerticalContentAlignment="Center" Name="user"/>
         <PasswordBox HorizontalAlignment="Left" Margin="909,448,0,0" VerticalAlignment="Top" Width="478" Height="47" Background="WhiteSmoke" FontSize="20" VerticalContentAlignment="Center" Name="pass"/>

@@ -23,5 +23,40 @@ namespace ProjectKel3
         {
             InitializeComponent();
         }
+
+        private void DashBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DafPBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RmBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void KlinikBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DiagnosBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LogOutBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -5,6 +5,7 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Klinik_Icon2.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,9 +13,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Klinik_Icon2.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
     <PackageReference Include="MySql.Data" Version="8.0.29" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="20.2.0.36" />
   </ItemGroup>
 
   <ItemGroup>

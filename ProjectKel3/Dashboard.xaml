@@ -1,30 +1,58 @@
-﻿<Window x:Class="ProjectKel3.Dashboard"
+﻿<Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf"  x:Class="ProjectKel3.Dashboard"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectKel3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="982" Width="1512">
-    <Grid>
-        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFFAFAFA" Width="273" Height="979">
-            <Image Height="173" Source="/Image1.png" Stretch="Fill" Width="182" HorizontalAlignment="Left" Margin="38,640,0,0"/>
-        </Label>
+        Title="Klinik PCR" Height="1205" Width="1920" WindowState="Maximized">
+    <Grid Margin="0,0,0,-202">
 
-        <Label HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFFAFAFA" Width="1512" Height="83"/>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FFFAFAFA" Width="273" Height="2396"/>
+
+        <Label HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFFAFAFA" Width="1920" Height="88"/>
         <Label Content="Admin" Background="#FF2183CE" FontWeight="Normal" FontFamily="Segoe UI Semibold" FontSize="20" Foreground="White" Width="151" Height="50" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="61,170,0,0"/>
 
-        <Label HorizontalAlignment="Left" Margin="272,88,0,0" VerticalAlignment="Top" Background="#FFD9D9D9" Width="1240" Height="878">
 
-        </Label>
-        <Label Content="Klinik" HorizontalAlignment="Left" Margin="91,83,0,0" VerticalAlignment="Top" Foreground="#FF2183CE" FontFamily="Segoe UI Semibold" FontSize="32"/>
-        <Label Content="Dashboard" HorizontalAlignment="Left" Margin="82,272,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
-        <Label Content="Daftar Pasien" HorizontalAlignment="Left" Margin="71,341,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
-        <Label Content="Rekam Medis" HorizontalAlignment="Left" Margin="70,407,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
-        <Label Content="Kelola Klinik" HorizontalAlignment="Left" Margin="76,471,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
-        <Label Content="Diagnosis" HorizontalAlignment="Left" Margin="87,535,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
-        <Label Content="Logout" HorizontalAlignment="Left" Margin="99,596,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold"/>
-        <Button Content="Info" HorizontalAlignment="Left" Margin="60,836,0,0" VerticalAlignment="Top" Background="#FF2183CE" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="20" Width="151" Height="36" BorderBrush="#FF2183CE"/>
+
+
+
+        <Label Content="Klinik" HorizontalAlignment="Left" Margin="91,83,0,0" VerticalAlignment="Top" Foreground="#FF2183CE" FontFamily="Segoe UI Semibold" FontSize="32" Height="53" Width="90"/>
+
+        <Button Content="Dashboard" HorizontalAlignment="Left" Margin="83,264,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold" Background="{x:Null}" BorderBrush="{x:Null}" Click="DafPBtn_Click" Height="31" Width="103"/>
+        <Button Content="Daftar Pasien" HorizontalAlignment="Left" Margin="84,333,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold" Background="{x:Null}" BorderBrush="{x:Null}" Click="DafPBtn_Click" Height="31" Width="124"/>
+        <Button Content="Rekam Medis" HorizontalAlignment="Left" Margin="83,403,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold" Background="{x:Null}" BorderBrush="{x:Null}" Click="RmBtn_Click" Height="31" Width="126"/>
+        <Button Content="Kelola Klinik" HorizontalAlignment="Left" Margin="84,466,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold" Background="{x:Null}" BorderBrush="{x:Null}" Click="KlinikBtn_Click" Height="31" Width="115"/>
+        <Button Content="Diagnosis" HorizontalAlignment="Left" Margin="84,539,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold" Background="{x:Null}" BorderBrush="{x:Null}" Click="DiagnosBtn_Click" Height="31" Width="92"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="84,616,0,0" VerticalAlignment="Top" Foreground="#FF505050" FontSize="20" FontFamily="Segoe UI Semibold" Background="{x:Null}" BorderBrush="{x:Null}" Click="LogOutBtn_Click" Height="31" Width="69"/>
+        <Button Content="Info" HorizontalAlignment="Left" Margin="61,712,0,0" VerticalAlignment="Top" Background= "#FF2183CE" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="20" Width="151" Height="36" BorderBrush="#FF2183CE"/>
+        <Rectangle HorizontalAlignment="Left" Height="2308" Margin="273,88,0,0" Stroke="#FFD9D9D9" VerticalAlignment="Top" Width="1647" Fill="#FFD9D9D9"/>
+        <Rectangle HorizontalAlignment="Left" Height="46" Margin="329,174,0,0" Stroke="#FF2183CE" VerticalAlignment="Top" Width="48" Fill="#FF2183CE"/>
+        <TextBlock HorizontalAlignment="Left" Margin="393,179,0,0" TextWrapping="Wrap" Text="Dashboard" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="27" Background="#FFD9D9D9" Foreground="#FF505050"/>
+
+        <ScrollViewer Margin="278,264,10,25" BorderBrush="Black">
+            <WrapPanel Margin="0,4,0,0" Width="1580">
+                <DockPanel Margin="8">
+                    <Rectangle HorizontalAlignment="Left" Height="186" Margin="45,0,0,0" Stroke="#FFFA4444" VerticalAlignment="Top" Width="315" Fill="#FFFA4444"/>
+                    <Separator Width="15" Cursor="" Foreground="{x:Null}" Background="{x:Null}" />
+                    <Rectangle HorizontalAlignment="Left" Height="186" Margin="1,0,0,0" Stroke="#FF3FC53D" VerticalAlignment="Top" Width="315" Fill="#FF3FC53D"/>
+                    <Separator Width="15" Cursor="" Foreground="{x:Null}" Background="{x:Null}" />
+                    <Rectangle HorizontalAlignment="Left" Height="186" Margin="2,0,0,0" Stroke="#FFFBB733" VerticalAlignment="Top" Width="315" Fill="#FFFBB733"/>
+                </DockPanel>
+                <DockPanel Margin="8">
+                    <Rectangle HorizontalAlignment="Left" Height="186" Margin="45,0,0,0" Stroke="#FF2183CE" VerticalAlignment="Top" Width="315" Fill="#FF2183CE"/>
+                    <Separator Width="15" Cursor="" Foreground="{x:Null}" Background="{x:Null}" />
+                    <Rectangle HorizontalAlignment="Left" Height="186" Margin="1,0,0,0" Stroke="#FF3D63C5" VerticalAlignment="Top" Width="315" Fill="#FF3D63C5"/>
+                    <Separator Width="15" Cursor="" Foreground="{x:Null}" Background="{x:Null}" />
+                    <Rectangle HorizontalAlignment="Left" Height="186" Margin="2,0,0,0" Stroke="#FF1AABA2" VerticalAlignment="Top" Width="315" Fill="#FF1AABA2"/>
+                </DockPanel>
+                <DockPanel Width="1023">
+                    <syncfusion:SfChart Margin="24,0,0,0" Width="1005" Height="582" />
+                </DockPanel>
+
+
+            </WrapPanel>
+                </ScrollViewer>
 
 
     </Grid>
